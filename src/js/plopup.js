@@ -37,7 +37,7 @@
 		//	Set default options 
 		//----------------------
 		self.options = jQuery.extend({
-			close_button:'close'
+			button:'close'
 		}, _options);
 		
 		//----------------------------------------
@@ -58,7 +58,7 @@
 		$( self.elem ).css({ 
 			'display':'block',
 			'position':'absolute',
-			'z-index':'1000',
+			'z-index':'9999',
 			'top':top+'px',
 			'left':left+'px'
 		});
@@ -98,7 +98,7 @@
 		//---------------------------------
 		//	Make sure the element's hidden 
 		//---------------------------------
-		$( self.elem ).css({ 'display':'none' });
+		$( self.elem ).css({'display':'none'});
 		
 		//------------------------
 		//	Create a close button 
@@ -114,7 +114,7 @@
 		//  Create the close button
 		//------------------------------------------------------------
 		var close = $(document.createElement('a'));
-		close.html(self.options['close_button']);
+		close.html(self.options['button']);
 		close.attr('href', '#'+self.obj['id']+'-close');
 		close.addClass('plopup');
 		close.addClass('close');
@@ -152,6 +152,9 @@
 		//-------------------
 		$('a', document).click( function( _e ) {
 			var href = $(this).attr('href');
+			if (href == undefined) {
+				return;
+			}
 			href = href.replace('#','');
 			
 			//--------------------------------------------------------
