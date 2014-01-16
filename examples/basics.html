@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<!-- Load CSS -->
+		<link href="../src/css/plopup.css" rel="stylesheet" type="text/css" />
+		<!-- End Load CSS -->
+		<title>plopup</title>
+	<head>
+	<body>
+		<a href="#plopup">Click to see the pop-up</a>
+		<div id="plopup">
+			<h1>plopup</h1>
+			<p>Plopped-Up! Whoooo-eeee!</p>
+		</div>
+	</body>
+	<!-- Load Javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../src/js/plopup.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			$('#plopup').plopup();
+		});
+	</script>
+<html>
