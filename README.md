@@ -2,8 +2,9 @@
 
 plopup creates a horizontally and vertically centered popup window.
 Use it for good and not evil.
-Good would be warning or tool boxes for web applications.
-Bad would be for advertising.
+Good would be warnings or tool boxes for web applications.
+Bad would be for advertising and annoying people for your or your employer's financial gain and glorification.
+Pop-ups are powerful.
 
 # Requirements
 * jQuery
